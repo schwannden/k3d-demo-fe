@@ -26,11 +26,10 @@ export default {
    * @name 详细的代理配置
    * @doc https://github.com/chimurai/http-proxy-middleware
    */
-  pre: {
+  dev: {
     '/api/': {
-      target: 'your pre url',
+      target: 'http://127.0.0.1:5000',
       changeOrigin: true,
-      pathRewrite: { '^': '' },
     },
   },
 };
